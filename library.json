@@ -22,7 +22,11 @@
     },
 
     "build": {
-        "extraScript": "./extra_script.py"
+        "extraScript": "./extra_script.py",
+	  "flags": [
+            "-DRMW_UXRCE_MAX_PUBLISHERS=100",  // Nouveau flag
+            "-DRMW_UXRCE_MAX_SUBSCRIPTIONS=50" // Optionnel
+	]
     },
 
     "frameworks": "arduino",
