@@ -1,6 +1,6 @@
 {
-    "name" : "micro_ros_platformio",
-    "version" : "0.0.1",
+    "name": "micro_ros_platformio",
+    "version": "0.0.1",
     "authors": [
         {
             "name": "Pablo Garrido",
@@ -13,22 +13,24 @@
             "maintainer": true
         }
     ],
-
-    "description" : "micro-ROS Platform.IO library",
-    "homepage" : "https://micro.ros.org",
+    "description": "micro-ROS Platform.IO library",
+    "homepage": "https://micro.ros.org",
     "repository": {
         "type": "git",
         "url": "https://github.com/ghassenmah/micro_ros_platformio.git"
     },
-
     "build": {
         "extraScript": "./extra_script.py",
-	  "flags": [
-            "-DRMW_UXRCE_MAX_PUBLISHERS=100",  // Nouveau flag
-            "-DRMW_UXRCE_MAX_SUBSCRIPTIONS=50" // Optionnel
-	]
+        "flags": [
+            "-DRMW_UXRCE_MAX_PUBLISHERS=100"
+        ]
     },
-
     "frameworks": "arduino",
-    "platforms": "teensy, https://github.com/platformio/platform-espressif32.git#feature/arduino-upstream, atmelsam, raspberrypi, ststm32"
+    "platforms": [
+        "teensy",
+        "https://github.com/platformio/platform-espressif32.git#feature/arduino-upstream",
+        "atmelsam",
+        "raspberrypi",
+        "ststm32"
+    ]
 }
