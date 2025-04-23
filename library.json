@@ -22,8 +22,8 @@
     "build": {
         "extraScript": "./extra_script.py",
         "flags": [
-            "-DRMW_UXRCE_MAX_PUBLISHERS=100",
             "-DRMW_UXRCE_MAX_NODES=50",
+            "-DRMW_UXRCE_MAX_PUBLISHERS=100",
             "-DRMW_UXRCE_MAX_SUBSCRIPTIONS=100",
             "-DRMW_UXRCE_MAX_SERVICES=50",
             "-DRMW_UXRCE_MAX_CLIENTS=50"
