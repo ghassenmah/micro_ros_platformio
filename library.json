@@ -26,7 +26,10 @@
             "-DRMW_UXRCE_MAX_PUBLISHERS=100",
             "-DRMW_UXRCE_MAX_SUBSCRIPTIONS=100",
             "-DRMW_UXRCE_MAX_SERVICES=100",
-            "-DRMW_UXRCE_MAX_CLIENTS=100"
+            "-DRMW_UXRCE_MAX_CLIENTS=100",
+            "-DRMW_UXRCE_MAX_HISTORY=10",
+            "-DRMW_UXRCE_STREAM_HISTORY_INPUT=10",
+            "-DRMW_UXRCE_STREAM_HISTORY_OUTPUT=10"
         ]
     },
     "frameworks": "arduino",
