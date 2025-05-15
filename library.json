@@ -22,14 +22,16 @@
     "build": {
         "extraScript": "./extra_script.py",
         "flags": [
-            "-DRMW_UXRCE_MAX_NODES=100",
+            "-DRMW_UXRCE_MAX_NODES=1",
             "-DRMW_UXRCE_MAX_PUBLISHERS=100",
-            "-DRMW_UXRCE_MAX_SUBSCRIPTIONS=100",
-            "-DRMW_UXRCE_MAX_SERVICES=100",
-            "-DRMW_UXRCE_MAX_CLIENTS=100",
+            "-DRMW_UXRCE_MAX_SUBSCRIPTIONS=50",
+            "-DRMW_UXRCE_MAX_SERVICES=10",
+            "-DRMW_UXRCE_MAX_CLIENTS=10",
             "-DRMW_UXRCE_MAX_HISTORY=10",
             "-DRMW_UXRCE_STREAM_HISTORY_INPUT=10",
-            "-DRMW_UXRCE_STREAM_HISTORY_OUTPUT=10"
+            "-DRMW_UXRCE_STREAM_HISTORY_OUTPUT=10",
+            "-DRMW_UXRCE_MAX_WAIT_SETS=10",
+            "-DRMW_UXRCE_MAX_GUARD_CONDITION=10"
         ]
     },
     "frameworks": "arduino",
